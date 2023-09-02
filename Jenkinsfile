@@ -1,3 +1,4 @@
+@Library("shared_library") _
 pipeline {
     agent any
     triggers {
@@ -17,6 +18,7 @@ pipeline {
         stage('Deliver') {
             steps {
                 echo 'Deliver....'
+                printSuccess()
             }
         }
     }
