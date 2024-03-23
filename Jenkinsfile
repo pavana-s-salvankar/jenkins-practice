@@ -20,11 +20,11 @@ pipeline {
                 echo "Testing.."
             }
         }
-        stage('Deliver') {
-            steps {
-                echo 'Deliver....'
-                printSuccess()
-            }
-        }
+        // stage('Deliver') {
+        //     steps {
+        //         echo 'Deliver....'
+        //         printSuccess()
+        //     }
+        // }
     }
 }
