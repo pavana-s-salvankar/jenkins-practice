@@ -6,7 +6,9 @@ pipeline {
     }
     stages {
         stage ('Starting seedjob') {
+        steps {
         build job: 'seedjob'
+        }
 }
         stage('Build') {
             steps {
